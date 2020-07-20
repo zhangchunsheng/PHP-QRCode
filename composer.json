@@ -1,0 +1,48 @@
+{
+  "name": "zhangchunsheng/PHP-QRCode",
+  "type": "library",
+  "description": "PHP QRCode is qrcode utils written in PHP.",
+  "keywords": [
+    "package",
+    "dependency",
+    "autoload"
+  ],
+  "homepage": "https://github.com/zhangchunsheng/PHP-QRCode",
+  "license": "Apache-2.0",
+  "version": "v0.0.1",
+  "authors": [
+    {
+      "name": "Chunsheng Zhang",
+      "email": "zhangchunsheng423@gmail.com",
+      "homepage": "https://www.luomor.com/"
+    }
+  ],
+  "require": {
+    "php": "^7.0 || ^8.0"
+  },
+  "require-dev": {
+
+  },
+  "config": {
+
+  },
+  "extra": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "Coco\\QRCode\\": "src/Coco/QRCode/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+
+  },
+  "support": {
+    "issues": "https://github.com/zhangchunsheng/PHP-QRCode/issues"
+  }
+}
