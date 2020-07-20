@@ -8,7 +8,7 @@
  * PHP QR Code is distributed under LGPL 3
  * Copyright (C) 2010 Dominik Dzienia <deltalab at poczta dot fm>
  *
- * Code modifications by Momchil Bozhinov <momchil at bojinov dot info>
+ * Code modifications by Chunsheng Zhang <zhangchunsheng423@gmail.com>
  * Last update - 03.2019
  *
  */
