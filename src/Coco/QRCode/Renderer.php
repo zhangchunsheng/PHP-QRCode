@@ -99,12 +99,13 @@ class Renderer {
         for($y = 0 ; $y < $h ; $y++) {
             for($x = 0 ; $x < $h ; $x++) {
                 if ($this->encoded[$y][$x] & 1) {
-                    $ascii .= $this->unichr(219) . $this->unichr(219);
+                    //$ascii .= $this->unichr(219) . $this->unichr(219);
+                    $ascii .= "██";
                 } else {
                     $ascii .= "  ";
                 }
             }
-            $ascii .= "\r\n";
+            $ascii .= "\n";
         }
 
         return $ascii;
