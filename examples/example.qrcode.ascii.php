@@ -5,7 +5,7 @@ require_once("bootstrap.php");
 use \Coco\QRCode\QRCode;
 
 $QRCode = new QRCode(['level' => "Q", 'size' => 6, 'margin' => 2]);
-$text = $QRCode->encode('http://www.test.bg/BLA BLA BLA BLA BLA BLA')->toASCII();
+$text = $QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode')->toASCII();
 
 echo "二维码\n";
 echo $text;
