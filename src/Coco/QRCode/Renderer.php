@@ -101,8 +101,10 @@ class Renderer {
                 if ($this->encoded[$y][$x] & 1) {
                     //$ascii .= $this->unichr(219) . $this->unichr(219);
                     $ascii .= "██";
+                    //$ascii .= "\u001b[30m  \u001b[0m";
                 } else {
                     $ascii .= "  ";
+                    //$ascii .= "\u001b[47m  \u001b[0m";
                 }
             }
             $ascii .= "\n";

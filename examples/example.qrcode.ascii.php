@@ -55,4 +55,5 @@ $output.replace("U", [char]0x2588)
 
 https://api.qrserver.com/v1/create-qr-code/?data=http%3A%2F%2Fweixin.qq.com%2Fx%2FIbWrjqNSAkikarnnQVFJ
 
+https://wechaty.github.io/qrcode/https://login.weixin.qq.com/l/YacYh1Ercw==
 */
