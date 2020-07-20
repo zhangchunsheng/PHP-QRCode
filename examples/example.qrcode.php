@@ -55,10 +55,10 @@ $QRCode->forWeb("JPG", $quality = 90);
 # Kanji			1817 characters
 
 $QRCode = new QRCode(['level' => "Q", 'size' => 10, 'margin' => 4]);
-$QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode/фффф TEST TEST  TEST  TEST  TEST  TEST  TEST  TEST  TEST ')->toFile("temp/example.QRcode.png");
+$QRCode->encode('https://github.com/zhangchunsheng/php-qrcode/')->toFile("temp/example.QRcode.png");
 
 $QRCode->config(["error_correction" => "H", "matrix_point_size" => 8, "margin" => 4]);
-$QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode/фффф')->toFile("temp/example2.QRcode.png");
+$QRCode->encode('https://github.com/zhangchunsheng/php-qrcode/')->toFile("temp/example2.QRcode.png");
 
 $QRCode->config(["error_correction" => "M", "matrix_point_size" => 6, "margin" => 4]);
 $QRCode->encode('zhangchunsheng423@gmail.com')->toFile("temp/example3.QRcode.png");
@@ -67,7 +67,7 @@ $QRCode->config(["error_correction" => "H", "matrix_point_size" => 7, "margin" =
 $QRCode->encode('zhangchunsheng423@gmail.com')->toFile("temp/example4.QRcode.jpg");
 
 $QRCode->config(["error_correction" => "Q", "matrix_point_size" => 10, "margin" => 4]);
-$QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode/фффф TEST TEST  TEST  TEST  TEST  TEST  TEST  TEST ', "Byte")->toFile("temp/example5.QRcode.png"); // 70 chars
+$QRCode->encode('https://github.com/zhangchunsheng/php-qrcode/ TEST TEST  TEST  TEST  TEST  TEST  TEST  TEST ', "Byte")->toFile("temp/example5.QRcode.png"); // 70 chars
 
 $QRCode->config(["error_correction" => "L", "matrix_point_size" => 7, "margin" => 4]);
 $QRCode->encode('20200720', $hint = "Numeric")->toFile("temp/example6.QRcode.jpg", $quality = 90);

@@ -9,7 +9,7 @@ $mtime = explode(" ",microtime());
 $starttime = $mtime[1] + $mtime[0];
 
 $QRCode = new QRCode(['level' => "Q", 'size' => 10, 'margin' => 4]);
-$QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode')->toFile("temp/example.QRcode.long.png");
+$QRCode->encode('https://github.com/zhangchunsheng/php-qrcode')->toFile("temp/example.QRcode.long.png");
 
 ## Stop timer
 $mtime = explode(" ",microtime());

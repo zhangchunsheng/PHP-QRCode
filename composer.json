@@ -1,7 +1,7 @@
 {
-  "name": "zhangchunsheng/PHP-QRCode",
+  "name": "zhangchunsheng/php-qrcode",
   "type": "library",
-  "description": "PHP QRCode is qrcode utils written in PHP.",
+  "description": "php qrcode is qrcode utils written in PHP.",
   "keywords": [
     "package",
     "dependency",
@@ -43,6 +43,6 @@
 
   },
   "support": {
-    "issues": "https://github.com/zhangchunsheng/PHP-QRCode/issues"
+    "issues": "https://github.com/zhangchunsheng/php-qrcode/issues"
   }
 }
