@@ -23,11 +23,11 @@ Usage:<br />
 'size' => $max_module_size,<br />
 'margin' => $white_frame_size<br />
 </code></pre>
-]))->encode('https://github.com/zhangchunsheng/PHP-QRCode')->toFile("example.QRcode.png");<br />
+]))->encode('https://github.com/zhangchunsheng/php-qrcode')->toFile("example.QRcode.png");<br />
 
 - Or:<br />
 $QRCode = new QRcode(['level' => QR_ECLEVEL_Q, 'size' => 10, 'margin' => 4]);<br />
-$QRCode->encode('https://github.com/zhangchunsheng/PHP-QRCode', $hint);<br />
+$QRCode->encode('https://github.com/zhangchunsheng/php-qrcode', $hint);<br />
 
 - Dump the matrix:<br />
 echo json_encode($QRCode->toArray());<br />

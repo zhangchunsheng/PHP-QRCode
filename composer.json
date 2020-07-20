@@ -7,7 +7,7 @@
     "dependency",
     "autoload"
   ],
-  "homepage": "https://github.com/zhangchunsheng/PHP-QRCode",
+  "homepage": "https://github.com/zhangchunsheng/php-qrcode",
   "license": "Apache-2.0",
   "version": "v0.0.1",
   "authors": [
