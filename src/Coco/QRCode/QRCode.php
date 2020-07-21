@@ -35,7 +35,7 @@ class QRCode {
                     $this->options['level'] = 3;
                     break;
                 default:
-                    throw qrException::InvalidInput("Invalid value for \"level\"");
+                    throw QRException::InvalidInput("Invalid value for \"level\"");
             }
         } else {
             $this->options['level'] = 0;
@@ -50,10 +50,10 @@ class QRCode {
 
     private function setColor($value, $default, $opts) {
         if (!isset($opts[$value])) {
-            $this->options[$value] = new qrColor($default);
+            $this->options[$value] = new QRColor($default);
         } else {
-            if (!($opts[$value] instanceof qrColor)) {
-                throw qrException::InvalidInput("Invalid value for \"$value\". Expected an azColor object.");
+            if (!($opts[$value] instanceof QRColor)) {
+                throw QRException::InvalidInput("Invalid value for \"$value\". Expected an azColor object.");
             }
             $this->options[$value] = $opts[$value];
         }
@@ -61,7 +61,7 @@ class QRCode {
 
     private function option_in_range($value, int $start, int $end) {
         if (!is_numeric($value) || $value < $start || $value > $end) {
-            throw qrException::InvalidInput("Invalid value. Expected an integer between $start and $end.");
+            throw QRException::InvalidInput("Invalid value. Expected an integer between $start and $end.");
         }
 
         return $value;
@@ -69,7 +69,7 @@ class QRCode {
 
     public function encode(string $text, string $hint = "undefined") {
         if($text == '\0' || $text == '') {
-            throw qrException::InvalidInput('empty string!');
+            throw QRException::InvalidInput('empty string!');
         }
 
         switch(strtolower($hint)){
@@ -89,7 +89,7 @@ class QRCode {
                 $hint = 3;
                 break;
             default:
-                throw qrException::InvalidInput("Invalid value for \"hint\"");
+                throw QRException::InvalidInput("Invalid value for \"hint\"");
         }
 
         $encoded = (new Encoder($this->options['level']))->encodeString($text, $hint);
@@ -135,7 +135,7 @@ class QRCode {
                 $this->renderer->toSVG($filename);
                 break;
             default:
-                throw qrException::InvalidInput('file extension unsupported!');
+                throw QRException::InvalidInput('file extension unsupported!');
         }
     }
 

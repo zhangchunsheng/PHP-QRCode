@@ -4,7 +4,7 @@ namespace Coco\QRCode;
 
 // keeping the alha on purpose
 
-class qrColor {
+class QRColor {
     private $R;
     private $G;
     private $B;
